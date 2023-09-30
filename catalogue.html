@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vegefarm - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="container-fluid d-flex justify-content-center align-items-center hdr-home" style="background-color: white;">
+        <nav class="container-fluid d-flex justify-content-md-around justify-content-between co bgcolor font ">
+            <a class="logo-title d-flex justify-content-between align-items-center text-decoration-none" href="index.html">
+                <h1 class="top-title fw-bold logo co">AA</h1>
+            </a>
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="#" class="top-home-link text-decoration-none "><span>HOME</span></a>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <img class="icon" src="https://www.materialui.co/materialIcons/action/view_list_grey_192x192.png" alt="Categories icon">
+                <a href="#" class="top-link text-decoration-none"><span>CATEGORIES</span></a>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="#" class="top-link text-decoration-none"><span>PURCHASE LIST</span></a>
+            </div>
+            <a href="./index.html" class="top-button text-decoration-none d-md-flex d-none justify-content-center align-items-center" style="background-color: #16a083;"><span>← BACK TO SHOPING</span></a>
+        </nav>
+    </header>
+    <section class="container-fluid d-md-flex d-none flex-column justify-content-center align-items-center searchStn-home co bgcolor font" style="background-color: #16a083;">
+        <h2 class="fw-bold searchHead">VEGEFARM</h2>
+        <h5 class="searchSubHead">Buy freshly grown organic fruits and vegetables</h5>
+        <div class="searchForm">
+            <form class="schForm" action="search.html">
+                <select id="category" name="category">
+                    <option value="all">All categories</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="vegetables">Vegetables</option>
+                    <option value="Rvegetables">Root Vegetables</option>
+                    <option value="grains&legumes">Grains & Legumes</option>
+                </select>
+                <input type="text" id="query" name="query" placeholder="What are you searching?">
+                <input type="text" id="country" name="country" placeholder="Country/Region">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+    <section class="container-fluid d-md-flex d-none justify-content-center ads-column">
+        <div class="hot-ads d-flex flex-column">
+        <h4 class="ads">HOT ADS</h4>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="ad row">
+                    <div class="col-5">
+                        <img class="ad-img" src="fruit.jpg" alt="Advertisement thumbnail">
+                    </div>
+                    <div class="col-7 d-flex flex-column justify-content-center align-items-start">
+                        <a class="text-decoration-none ad-title" href="#"><h5>Fruit Gift Basket</h5></a>
+                        <p class="ad-description">A gift basket comprising of over a dozen fruits freshly cultivated in the tropical climate of Trinidad.</p>
+                        <div class="d-flex" >
+                            <button class="cost-btn" type="button" style="background-color: #16a083;">$ 20</button>
+                            <button class="buy-btn" type="button" style="background-color: #16a083;"><img class="buy-icon" src="https://urerundesu.sakura.ne.jp/bbl-images01/top_cart.png" alt="Buy icon">Buy</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="ad row">
+                    <div class="col-5">
+                        <img class="ad-img" src="https://static.wixstatic.com/media/6fa640_d7d6a13c787c4f95b11deaab56b2a81e~mv2.jpeg" alt="Advertisement thumbnail">
+                    </div>
+                    <div class="col-7 d-flex flex-column justify-content-center align-items-start">
+                        <a class="text-decoration-none ad-title" href="#"><h5>Large Pumpkins Now on Sale!</h5></a>
+                        <p class="ad-description">Our pumpkins are fully organic and can weigh up to 10 kg in mass.</p>
+                        <div class="d-flex">
+                            <button class="cost-btn" type="button" style="background-color: #16a083;">$ 35</button>
+                            <button class="buy-btn" type="button" style="background-color: #16a083;"><img class="buy-icon" src="https://urerundesu.sakura.ne.jp/bbl-images01/top_cart.png" alt="Buy icon">Buy</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+    </section>
+    <section class="container-fluid container-lg d-flex flex-column justify-content-between align-items-center">
+            <h4 class="row-title align-self-start">Fruits</h4>
+            <div id="carouselFruits" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row product-row">
+                        <div class="card col-6 col-md-3 product">
+                            <img src="https://www.trinitrolley.com/images/products/original/product-id-5489.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Grapes</h5>
+                                <p class="card-text fw-bold amount">2 lb</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between product-foot">
+                                <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                                </div>
+                                <p class="fw-bold amount">$8.00</p>
+                            </div>
+                        </div>
+                        <div class="card col-6 col-md-3 product">
+                            <img src="https://5.imimg.com/data5/IY/ON/MY-12396329/fresh-banana-500x500-500x500.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Bananas</h5>
+                                <p class="card-text fw-bold amount">2 lb</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between product-foot">
+                                <div class="dropup">
+                                    <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                        <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                        <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                    </div>
+                                </div>
+                                <p class="fw-bold amount">$1.70</p>
+                            </div>
+                        </div>
+                        <div class="card col-6 col-md-3 product">
+                            <img src="orangess.webp" class="card-img-top product-img" alt="Product thumbnail">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Oranges</h5>
+                                <p class="card-text fw-bold amount">2 lb</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between product-foot">
+                                <div class="dropup">
+                                    <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                        <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                        <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                    </div>
+                                </div>
+                                <p class="fw-bold amount">$2.30</p>
+                            </div>
+                        </div>
+                        <div class="card col-6 col-md-3 product">
+                            <img src="https://images.freshop.com/1564405684709987538/d7e92e2c91c3b9ce30f88f24b47e2f87_large.png" class="card-img-top product-img" alt="Product thumbnail">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Tomatoes</h5>
+                                <p class="card-text fw-bold amount">2 lb</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between product-foot">
+                                <div class="dropup">
+                                    <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                        <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                        <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                    </div>
+                                </div>
+                                <p class="fw-bold amount">$3.40</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row product-row">
+                        <div class="card col-6 col-md-3 product">
+                            <img src="https://image.freepik.com/free-photo/papaya-white-background_59226-154.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Papaya</h5>
+                                <p class="card-text fw-bold amount">1</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between product-foot">
+                                <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                                </div>
+                                <p class="fw-bold amount">$1.15</p>
+                            </div>
+                        </div>
+                        <div class="card col-6 col-md-3 product">
+                            <img src="https://www.freshpicks.com/spree/products/1043/large/watermelon.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Watermelon</h5>
+                                <p class="card-text fw-bold amount">1</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between product-foot">
+                                <div class="dropup">
+                                    <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                        <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                        <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                    </div>
+                                </div>
+                                <p class="fw-bold amount">$1.00</p>
+                            </div>
+                        </div>
+                        <div class="card col-6 col-md-3 product">
+                            <img src="https://4.imimg.com/data4/II/GL/MY-28686567/fresh-pineapple-500x500.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Pineapple</h5>
+                                <p class="card-text fw-bold amount">1</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between product-foot">
+                                <div class="dropup">
+                                    <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                        <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                        <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                    </div>
+                                </div>
+                                <p class="fw-bold amount">$4.50</p>
+                            </div>
+                        </div>
+                        <div class="card col-6 col-md-3 product">
+                            <img src="https://www.coconutwaterlife.com/images/coconut-meat.png" class="card-img-top product-img" alt="Product thumbnail">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Dried Coconut</h5>
+                                <p class="card-text fw-bold amount">1</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between product-foot">
+                                <div class="dropup">
+                                    <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                        <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                        <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                    </div>
+                                </div>
+                                <p class="fw-bold amount">$1.75</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselFruits" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselFruits" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+        <h4 class="row-title align-self-start">Vegetables</h4>
+        <div id="carouselVegetables" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row product-row">
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://i5.walmartimages.com/asr/6e514084-866b-4398-b6eb-7b986e742713_1.76d73b3295c51031feee91fb3e0feaba.jpeg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Bell Peppers</h5>
+                            <p class="card-text fw-bold amount">1 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                            <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                <a class="dropdown-item prod-opt" href=#>More Details</a>
+                            </div>
+                            </div>
+                            <p class="fw-bold amount">$2.20</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_cd6edcd9-e50b-44c3-be2a-a3445b804258.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Cauliflour</h5>
+                            <p class="card-text fw-bold amount">1 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$2.50</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://www.delivermyfruitandveg.co.uk/wp-content/uploads/2020/09/aubergine.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Aubergine</h5>
+                            <p class="card-text fw-bold amount">1 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$2.00</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="spinach.png" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Spinach</h5>
+                            <p class="card-text fw-bold amount">2 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$3.60</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row product-row">
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_35d55c67-1d02-4533-ab0d-c33e3e6a278a.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Cucumber</h5>
+                            <p class="card-text fw-bold amount">1 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                            <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                <a class="dropdown-item prod-opt" href=#>More Details</a>
+                            </div>
+                            </div>
+                            <p class="fw-bold amount">$2.00</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://s.cornershopapp.com/product-images/3033667.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Cabbage</h5>
+                            <p class="card-text fw-bold amount">1 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$1.60</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://res-2.cloudinary.com/amn/image/upload/c_fill,f_auto,h_340,w_727/v1462859877/bittermelon_xkuavx.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Bitter Melon</h5>
+                            <p class="card-text fw-bold amount">1 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$1.80</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="http://cdn.shopify.com/s/files/1/0442/6835/5747/products/DesiOkra_1200x1200.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Okra</h5>
+                            <p class="card-text fw-bold amount">1 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$1.75</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselVegetables" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselVegetables" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <h4 class="row-title align-self-start">Root Vegetables</h4>
+        <div id="carouselRootVegs" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row product-row">
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://i5.walmartimages.com/asr/5920bc6b-1db0-4af3-9f23-dddc46c0095f_1.e20c8ba41055db1ac42dfbc1e08d2fe0.jpeg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Carrot</h5>
+                            <p class="card-text fw-bold amount">2 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                            <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                <a class="dropdown-item prod-opt" href=#>More Details</a>
+                            </div>
+                            </div>
+                            <p class="fw-bold amount">$1.00</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://www.freshpicks.com/spree/products/771/large/POTA1_359.jpg?1551443998" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Potatoes</h5>
+                            <p class="card-text fw-bold amount">2 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$1.05</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/91sElwHgP5L.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Eddoes</h5>
+                            <p class="card-text fw-bold amount">2 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$3.20</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="cassava.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Cassava</h5>
+                            <p class="card-text fw-bold amount">2 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$2.80</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row product-row">
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://www.karibkart.com/images/thumbs/0002554_jamaican-white-yam-1lb407g_510.jpeg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Yams</h5>
+                            <p class="card-text fw-bold amount">1 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                            <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                <a class="dropdown-item prod-opt" href=#>More Details</a>
+                            </div>
+                            </div>
+                            <p class="fw-bold amount">$1.90</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://myhomefavorites.com/wp-content/uploads/2018/01/YOnion.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Onions</h5>
+                            <p class="card-text fw-bold amount">2 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$1.15</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://d2d8wwwkmhfcva.cloudfront.net/400x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0eed49a1-12a8-41a0-9fe2-579a69d45360.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Sweet Potatoes</h5>
+                            <p class="card-text fw-bold amount">1 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$1.85</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://www.magrudersofdc.com/images/sites/magrudersofdc/labels/t83101450f.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Garlic</h5>
+                            <p class="card-text fw-bold amount">1 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$1.80</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselRootVegs" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselRootVegs" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <h4 class="row-title align-self-start">Grains & Legumes</h4>
+        <div id="carouselGrains" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row product-row">
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://m.media-amazon.com/images/I/41QUaPFq3ML._AC_SS450_.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Corn</h5>
+                            <p class="card-text fw-bold amount">2 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                            <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                <a class="dropdown-item prod-opt" href=#>More Details</a>
+                            </div>
+                            </div>
+                            <p class="fw-bold amount">$3.00</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://images.freshop.com/1564405684709987577/7d95b173ba1646e03b56c0d1e2502851_large.png" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Chickpeas</h5>
+                            <p class="card-text fw-bold amount">1 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$3.00</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="peas.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Yellow Split Peas</h5>
+                            <p class="card-text fw-bold amount">2 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$1.00</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://media.socastsrm.com/wordpress/wp-content/blogs.dir/343/files/2021/01/lentils.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Lentils</h5>
+                            <p class="card-text fw-bold amount">2 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$1.50</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row product-row">
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://images.freshop.com/1564405684709986814/4841d88d10688a5b578b2383c8ebd80b_large.png" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Red Beans</h5>
+                            <p class="card-text fw-bold amount">2 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                            <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                <a class="dropdown-item prod-opt" href=#>More Details</a>
+                            </div>
+                            </div>
+                            <p class="fw-bold amount">$3.80</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://dw9y5muw47j76.cloudfront.net/products/WholeGreenPeas.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Whole Green Peas</h5>
+                            <p class="card-text fw-bold amount">1 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$2.50</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://cdn.shopify.com/s/files/1/0891/0494/products/image_0844f37f-a36d-462b-88ef-75f61134f0f3.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Cashews</h5>
+                            <p class="card-text fw-bold amount">2 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$2.70</p>
+                        </div>
+                    </div>
+                    <div class="card col-6 col-md-3 product">
+                        <img src="https://5.imimg.com/data5/KG/KJ/MY-24266158/peanut-without-shell-500x500.jpg" class="card-img-top product-img" alt="Product thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Peanuts</h5>
+                            <p class="card-text fw-bold amount">2 lb</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between product-foot">
+                            <div class="dropup">
+                                <button type="button" class="btn add-product" data-bs-toggle="dropdown" aria-expanded="false">+</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item prod-opt" href=#>Add to Collection</a>
+                                    <a class="dropdown-item prod-opt" href=#>Send a Message</a>
+                                    <a class="dropdown-item prod-opt" href=#>More Details</a>
+                                </div>
+                            </div>
+                            <p class="fw-bold amount">$2.60</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselGrains" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselGrains" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- <footer class="d-flex justify-content-center">
+        <div class="row container-fluid container-lg d-flex justify-content-center">
+            <div class="d-flex flex-column col-md-4 col-3 align-items-center about">
+                <div class="logo-foot d-flex justify-content-center align-items-center">
+                    <img class="logo" src="resources/logo.png" alt="Vegefarm Logo">
+                    <h4 class="top-title">VEGEFARM</h4>
+                </div>
+                <p class="about-info text-start">Since 1975 we at Vegefarm have always strived to provide our customers with the freshest and most organic fruits and vegetables grown by our local farmers right here in Trinidad.</p>
+            </div>
+            <div class="cat-foot col-3 d-flex flex-column">
+                <h4 class="foot-heading">CATEGORIES</h4>
+                <div class="cat-lists d-flex flex-column flex-lg-row">
+                    <ul class="cat-list">
+                        <li class="cat-name"><a class="text-decoration-none fcat-link" href="#">Fruits</a></li>
+                        <li class="cat-name"><a class="text-decoration-none fcat-link" href="#">Vegetables</a></li>
+                    </ul>
+                    <ul class="cat-list">
+                        <li class="cat-name"><a class="text-decoration-none fcat-link" href="#">Root Vegetables</a></li>
+                        <li class="cat-name"><a class="text-decoration-none fcat-link" href="#">Grains & Legumes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cred-foot col-3 d-flex flex-column">
+                <h4 class="foot-heading">CREDITS</h4>
+                <div class="cat-lists d-flex flex-column">
+                    <ul class="cat-list">
+                        <li class="cat-name"><a class="text-decoration-none fcat-link" href="#">Logo from:</a></li>
+                        <li class="cat-name"><a class="text-decoration-none fcat-link" href="#">www.iconsdb.com</a></li>
+                        <li class="cat-name"><a class="text-decoration-none fcat-link" href="#">Microverse</a></li>
+                        <li class="cat-name"><a class="text-decoration-none fcat-link" href="#">Mohammed Awad</a></li>
+                        <li class="cat-name"><a class="text-decoration-none fcat-link" href="#">ZATTIX design</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="other-info col-3 col-md-2 d-flex flex-column justify-content-md-between justify-content-start align-items-baseline">
+                <div class="info d-flex align-items-center">
+                    <h5 class="info-variable">Language</h5>
+                    <h5 class="info-value">English</h5>
+                </div>
+                <div class="info d-flex align-items-center">
+                    <h5 class="info-variable">Country</h5>
+                    <h5 class="info-value">Trinidad</h5>
+                </div>
+                <div class="info d-flex align-items-center">
+                    <h5 class="info-variable">Currency</h5>
+                    <h5 class="info-value">US Dollars</h5>
+                </div>
+            </div>
+        </div> -->
+   </body>
+</html>
